@@ -1,0 +1,29 @@
+{
+  "name": "pathfork",
+  "version": "0.1.0",
+  "description": "Find out why a tool works in your terminal but not in cron, editor tasks, git hooks or coding-agent shells. Runs your tools in every shell context and explains the divergence.",
+  "type": "module",
+  "bin": { "pathfork": "bin/pathfork.js" },
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "eslint .",
+    "typecheck": "tsc -p jsconfig.json",
+    "demo": "node bin/pathfork.js --demo",
+    "check": "npm run lint && npm run typecheck && npm test"
+  },
+  "keywords": ["path", "shell", "cron", "zsh", "bash", "nvm", "environment", "debugging", "cli", "developer-tools", "coding-agents"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/Nithinfgs/pathfork.git" },
+  "bugs": "https://github.com/Nithinfgs/pathfork/issues",
+  "homepage": "https://github.com/Nithinfgs/pathfork#readme",
+  "author": "Nithinfgs",
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0",
+    "typescript": "^5.6.0"
+  }
+}
